@@ -45,20 +45,20 @@ class MainScreen extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
-          maxAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             // Display the result
             Container(
               alignment: Alignment.centerRight,
               padding: const EdgeInsets.all(12),
-              child: Text(
+              child: const Text(
                 '0',
                 style: TextStyle(
                   fontSize: 48
                 ),
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             // Display the buttons
             GridView.builder(
               shrinkWrap: true,
